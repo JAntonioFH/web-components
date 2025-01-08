@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <my-element yellow>
+        <span slot="Titulo">Hola Mundo1</span>
+        <span slot="Parrafo">Este es un párrafo dentro de un componente web.</span>
+    </my-element>
+    <my-element class="blue">
+        <span slot="Titulo">Hola Mundo2</span>
+        <span slot="Parrafo">Este es un párrafo dentro de un componente web.</span>
+    </my-element>
+    <article class="card">
+        <my-element >
+            <span slot="Titulo">Hola Mundo3</span>
+            <span slot="Parrafo">Este es un párrafo dentro de un componente web.</span>
+        </my-element>
+    </article>
+    <script src="./my-element.js"></script>
+</body>
+</html>
