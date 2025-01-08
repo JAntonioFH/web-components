@@ -7,10 +7,12 @@ class myElement extends HTMLElement{
     static get observedAttributes(){
         return ["title","parrafo","img"];
     }
-attributeChangedCallback(attr, oldVal, newVal) {
+    attributeChangedCallback(attr, oldVal, newVal) {
+        // 
         if (oldVal !== newVal) {
             this[attr] = newVal
         }
+        
         this.render();
     }
     getTemplate(){
