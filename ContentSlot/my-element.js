@@ -7,9 +7,9 @@ class myElement extends HTMLElement{
         const template = document.createElement("template");
         template.innerHTML =  `
             <section>
-                <h2> <slot></slot></h2>
+                <h2> <slot name="Titulo"></slot></h2>
                 <div>
-                    <p> Texto ejemplo</p>
+                    <p> <slot name="Parrafo"></slot></p>
                     <input type="text">
                 </div>
             </section>
